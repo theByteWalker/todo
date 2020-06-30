@@ -12,8 +12,7 @@ public class ItemService
     private ItemRepository itemRepository;
 
     public Item add(String description) {
-        Item item = new Item();
-        item.setDescription(description);
+        Item item = new Item(description);
         return itemRepository.save(item);
     }
 }
