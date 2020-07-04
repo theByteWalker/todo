@@ -1,4 +1,4 @@
-package com.technogise.internal.todo.Model;
+package com.technogise.internal.todo.model;
 
 
 import javax.persistence.GenerationType;
@@ -20,6 +20,10 @@ public class Item
     }
 
     public Item(String description) {
+        this.description = description;
+    }
+    public Item(Long id, String description) {
+        this.id = id;
         this.description = description;
     }
     public void setDescription(String description)

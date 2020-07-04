@@ -1,7 +1,8 @@
-package com.technogise.internal.todo;
+package com.technogise.internal.todo.repository;
 
-import com.technogise.internal.todo.Model.Item;
-import com.technogise.internal.todo.Repository.ItemRepository;
+import com.technogise.internal.todo.TodoApplication;
+import com.technogise.internal.todo.model.Item;
+import com.technogise.internal.todo.repository.ItemRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,8 +25,7 @@ public class ItemRepositoryTest {
 
     @Test
     public void givenGenericEntityRepository_whenSaveAndRetreiveEntity_thenOK() {
-        Item genericEntity = genericEntityRepository
-                .save(new Item("test"));
+        Item genericEntity = genericEntityRepository.save(new Item("test"));
         Optional<Item> foundEntity = genericEntityRepository.findById(genericEntity.getId());
 
         assertTrue(foundEntity.isPresent());

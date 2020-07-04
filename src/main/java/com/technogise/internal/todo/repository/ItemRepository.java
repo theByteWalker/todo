@@ -1,6 +1,6 @@
-package com.technogise.internal.todo.Repository;
+package com.technogise.internal.todo.repository;
 
-import com.technogise.internal.todo.Model.Item;
+import com.technogise.internal.todo.model.Item;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

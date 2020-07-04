@@ -1,7 +1,7 @@
-package com.technogise.internal.todo.Service;
+package com.technogise.internal.todo.service;
 
-import com.technogise.internal.todo.Model.Item;
-import com.technogise.internal.todo.Repository.ItemRepository;
+import com.technogise.internal.todo.model.Item;
+import com.technogise.internal.todo.repository.ItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
