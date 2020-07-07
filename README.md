@@ -1,14 +1,20 @@
 # 📝 TODO Application
-
+This is an application to manage todo items. As of now it only has a function to add a todo item. You can create a separate branch forked from `master`and then submit a pull request having changes made by you. 
 ### ⚙ Tech used
 - Java / Maven / Spring Boot
 - Docker
+- PostgreSQL
 
 ### 💻 Pre-requisite softwares
 - Docker
+- Java SDK (latest version)
 
-### 🏃‍ Steps to run the app
+### 🏃‍ Steps to run the app using Docker
 - Run `docker-compose up`
+
+### 🏃‍ Steps to run the app without using Docker
+- Install postgresDB locally / use DB by running `docker-compose up`
+- Run command `./mvnw spring-boot:run`
 
 ### 🏃‍ Steps to run the test
 - Run `mvn test`
