@@ -1,17 +1,17 @@
 version: "2"
-
 services:
   app:
     ports:
       - 8080:8080
+    volumes:
+      - ./:/usr/src/app
+      - ./.m2:/root/.m2
     depends_on:
       - db
     build:
       context: .
       dockerfile: Application.Dockerfile
-    volumes:
-      - ./:/usr/src/app
-
+    command: /bin/sh -c "unset MAVEN_CONFIG && ./mvnw spring-boot:run"
   db:
     image: postgres
     ports:
@@ -20,5 +20,3 @@ services:
       POSTGRES_DB: todo_db
       POSTGRES_USER: todo_user
       POSTGRES_PASSWORD: todo_password
-volumes:
-  maven-repo:
