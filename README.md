@@ -7,7 +7,7 @@ This is an application to manage todo items. As of now it only has a function to
 
 ### 💻 Pre-requisite softwares
 - Docker
-- Java SDK (latest version)
+- Java SDK 8
 
 ### 🏃‍ Steps to run the app using Docker
 - Running `docker-compose up` :
